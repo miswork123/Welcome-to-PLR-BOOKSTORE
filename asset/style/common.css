@@ -124,8 +124,7 @@ body {
     align-items: center;
     width: 100%;
     transition: 0.25s all;
-   
-   
+    
 }
 .list__li a :nth-child(4){
    padding-right: unset;
@@ -148,14 +147,13 @@ body {
 .list__li a {
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     color: #000000;
     padding: 10px 5px;
     position: relative;
     padding: 10px 20px;
-   
     
 }
 
@@ -358,6 +356,7 @@ footer{
 .footer__subscribe:hover{
     color: #C45500;
     background: #ffffff;
+    box-shadow: 0px 0px 35px #C45500 ;
     border: 1px solid #C45500;
     
 }
@@ -442,7 +441,7 @@ footer{
         right: 25px;
         width: 55px;
         height: 55px;
-        border-radius: 10px;
+        border-radius: 4px;
         background: white;
         box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
         ;
@@ -600,8 +599,9 @@ footer{
         right: 5px;
         transition: 0.4s;
         z-index: 10000;
-        background: #B6B6B6;
+        background: #ffffff;
         transform: translateX(-100%);
+        padding: 5px 10px;
         
     }
     .from__search input{
@@ -625,6 +625,10 @@ footer{
         height: 30px;
         right: 10px;
     }
+
+    .footer__support{
+        margin-left: 10px;
+    }
     .strip div{
         width: 20px;
         margin: 4px;
@@ -642,4 +646,34 @@ footer{
         transform-origin: top left;
     }
     
+}
+
+@media only screen and (max-width: 479px){
+    .footer__support{
+        margin-left: 10px;
+    }
+    .list-bottom li p{
+        white-space: normal;
+    }
+    .footer__thanhtoan {
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+        position: absolute;
+        bottom: 42px;
+        right: 40px;
+    }
+    .ther-end{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .footer__left{
+        width: 100%;
+    }
+    .footer__item{
+        width: 100%;
+    }
+    .header__logo{
+        column-gap: 15px;
+    }
 }

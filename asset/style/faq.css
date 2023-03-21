@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.faq-backgourd {
+    width: 100%;
+    height: 300px;
+    background: #FBF7F6;
+    align-items: center;
+    display: flex;
+    padding-left: 40px;
+}
+
+.faq-backgourd h2 {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 81px;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.section-faq {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 117px 40px 115px 40px;
+}
+
+.section-faq>p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #9A4335;
+}
+
+.section-faq h3 {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 51px;
+    text-transform: uppercase;
+    color: #222222;
+    margin-top: 20px;
+}
+
+.faq-tab {
+    display: flex;
+    width: 100%;
+    padding-top: 54px;
+}
+
+.tab-left {
+    width: 50%;
+    padding-right: 53px;
+    border-right: 1px solid #DEDEDE;
+}
+
+.faq-list {
+    width: 100%;
+}
+
+.list-item {
+    width: 100%;
+    display: flex;
+    padding-top: 26px;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.list-item svg {
+    transition: 0.25s ease-in;
+}
+
+.what-prl {
+    display: inline-block;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #DEDEDE;
+    width: 90%;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+
+    transition: 0.3s ease;
+}
+
+.list-item:hover svg {
+    transform: rotate(90deg);
+}
+
+.list-item:hover svg path {
+    fill: #9A4335;
+    stroke: #9A4335;
+}
+
+.list-item:hover .what-prl {
+    color: #9A4335;
+}
+
+.prl-text {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #696969;
+    margin-top: 18px;
+    transition: 0.3s ease-in;
+    display: none;
+    cursor: default;
+}
+
+.list-item:hover .prl-text {
+    display: block;
+    transition: 0.5s all;
+}
+
+.tab-right {
+    flex: 1;
+    padding-left: 52px;
+}
+
+.prl-text span {
+    color: #4279C7;
+    cursor: pointer;
+}
+
+.prl-text.max {
+    display: block;
+    transition: 0.25s all;
+}
+
+.list-item:focus-within ~ .prl-text {
+    display: block;
+}
+
+/* reponsive */
+@media only screen and (max-width: 768px){
+    .faq-tab{
+        flex-direction: column;
+        text-align: left;
+    }
+    .tab-left{
+        width: 100%;
+        border: none;
+        padding-right: unset;
+    }
+    .tab-right{
+        padding-left: unset;
+    }
+    .section-faq{
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+    .section-faq h3{
+        font-size: 26px;
+        line-height: 30px;
+    }
+}

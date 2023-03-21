@@ -277,3 +277,60 @@ body {
  .swiper-button-next, .swiper-button-prev:hover{
     background: #FFD263;
  }
+
+ /* reponsive */
+
+ @media only screen and (max-width: 992px){
+    .ringt-list{
+        flex-wrap: wrap;
+    }
+    .ringt-list li{
+        width: calc(100% / 2 - 0px);
+    }
+    .categories-left{
+        padding-left: 10px;
+    }
+    .list-bottom li p{
+        white-space: nowrap;
+        margin-right: 5px;
+    }
+    .categories-right{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .swiper-button-next{
+        right: 30%;
+    }
+    .swiper-button-prev{
+        left: 30%;
+    }
+    .text-bottom p{
+        white-space: nowrap;
+    }
+ }
+ @media only screen and (max-width: 768px){
+    .ringt-list li{
+        width: calc(100% / 1 - 0px);
+    }
+    .list-contener{
+        margin-left: 34.5%;
+ }
+ .swiper-button-next{
+    right: 20%;
+}
+.swiper-button-prev{
+    left: 20%;
+}
+.text-bottom p{
+    white-space: normal;
+}
+}
+@media only screen and (max-width: 479px){
+    .section-categories{
+        flex-wrap: wrap;
+    }
+    .categories-left{
+        width: 100%;
+    }
+    
+}

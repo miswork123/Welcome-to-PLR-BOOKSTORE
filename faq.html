@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- link css swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- link css swiper slider -->
+
+
+    <link rel="stylesheet" href="./asset/style/faq.css">
+    <link rel="stylesheet" href="./asset/style/common.css">
+
+    <title>HomePage</title>
+</head>
+
+<body>
+    <header class="header__bookstore">
+        <div class="header__logo">
+
+            <img src="./asset/img/Logo.png" alt="">
+            <div class="search--icon">
+                <button type="submit">
+                    <svg width="25" height="25" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.7766 7.51632C14.7766 10.4514 12.0375 13.0367 8.38829 13.0367C4.73904 13.0367 2 10.4514 2 7.51632C2 4.58125 4.73904 1.99591 8.38829 1.99591C12.0375 1.99591 14.7766 4.58125 14.7766 7.51632ZM13.2213 12.4483C11.9257 13.438 10.2362 14.0367 8.38829 14.0367C4.30785 14.0367 1 11.1174 1 7.51632C1 3.9152 4.30785 0.995911 8.38829 0.995911C12.4687 0.995911 15.7766 3.9152 15.7766 7.51632C15.7766 9.14713 15.0982 10.6381 13.9769 11.7815L18.9492 16.1697L18.2875 16.9195L13.2213 12.4483Z"
+                            fill="black" />
+                        <path
+                            d="M13.2213 12.4483L13.5521 12.0734L13.2441 11.8017L12.9177 12.051L13.2213 12.4483ZM13.9769 11.7815L13.6199 11.4314L13.2509 11.8076L13.646 12.1563L13.9769 11.7815ZM18.9492 16.1697L19.3241 16.5005L19.6549 16.1257L19.2801 15.7948L18.9492 16.1697ZM18.2875 16.9195L17.9567 17.2944L18.3316 17.6252L18.6624 17.2503L18.2875 16.9195ZM8.38829 13.5367C12.2562 13.5367 15.2766 10.7817 15.2766 7.51632H14.2766C14.2766 10.1211 11.8188 12.5367 8.38829 12.5367V13.5367ZM1.5 7.51632C1.5 10.7817 4.52035 13.5367 8.38829 13.5367V12.5367C4.95774 12.5367 2.5 10.1211 2.5 7.51632H1.5ZM8.38829 1.49591C4.52035 1.49591 1.5 4.25097 1.5 7.51632H2.5C2.5 4.91154 4.95774 2.49591 8.38829 2.49591V1.49591ZM15.2766 7.51632C15.2766 4.25097 12.2562 1.49591 8.38829 1.49591V2.49591C11.8188 2.49591 14.2766 4.91154 14.2766 7.51632H15.2766ZM8.38829 14.5367C10.3441 14.5367 12.1406 13.903 13.5248 12.8457L12.9177 12.051C11.7108 12.9729 10.1284 13.5367 8.38829 13.5367V14.5367ZM0.5 7.51632C0.5 11.4505 4.09226 14.5367 8.38829 14.5367V13.5367C4.52345 13.5367 1.5 10.7844 1.5 7.51632H0.5ZM8.38829 0.495911C4.09226 0.495911 0.5 3.58217 0.5 7.51632H1.5C1.5 4.24822 4.52345 1.49591 8.38829 1.49591V0.495911ZM16.2766 7.51632C16.2766 3.58217 12.6843 0.495911 8.38829 0.495911V1.49591C12.2531 1.49591 15.2766 4.24822 15.2766 7.51632H16.2766ZM14.3339 12.1316C15.5372 10.9046 16.2766 9.29121 16.2766 7.51632H15.2766C15.2766 9.00305 14.6592 10.3717 13.6199 11.4314L14.3339 12.1316ZM13.646 12.1563L18.6184 16.5446L19.2801 15.7948L14.3077 11.4066L13.646 12.1563ZM18.5743 15.8388L17.9126 16.5886L18.6624 17.2503L19.3241 16.5005L18.5743 15.8388ZM18.6184 16.5446L13.5521 12.0734L12.8904 12.8232L17.9567 17.2944L18.6184 16.5446Z"
+                            fill="#333" />
+                    </svg>
+                </button>
+            </div>
+            <form action="" class="from__search">
+
+                <input type="text" id="search">
+                <button class="button__incon"><svg width="25" height="25" viewBox="0 0 20 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.7766 7.51632C14.7766 10.4514 12.0375 13.0367 8.38829 13.0367C4.73904 13.0367 2 10.4514 2 7.51632C2 4.58125 4.73904 1.99591 8.38829 1.99591C12.0375 1.99591 14.7766 4.58125 14.7766 7.51632ZM13.2213 12.4483C11.9257 13.438 10.2362 14.0367 8.38829 14.0367C4.30785 14.0367 1 11.1174 1 7.51632C1 3.9152 4.30785 0.995911 8.38829 0.995911C12.4687 0.995911 15.7766 3.9152 15.7766 7.51632C15.7766 9.14713 15.0982 10.6381 13.9769 11.7815L18.9492 16.1697L18.2875 16.9195L13.2213 12.4483Z"
+                            fill="black" />
+                        <path
+                            d="M13.2213 12.4483L13.5521 12.0734L13.2441 11.8017L12.9177 12.051L13.2213 12.4483ZM13.9769 11.7815L13.6199 11.4314L13.2509 11.8076L13.646 12.1563L13.9769 11.7815ZM18.9492 16.1697L19.3241 16.5005L19.6549 16.1257L19.2801 15.7948L18.9492 16.1697ZM18.2875 16.9195L17.9567 17.2944L18.3316 17.6252L18.6624 17.2503L18.2875 16.9195ZM8.38829 13.5367C12.2562 13.5367 15.2766 10.7817 15.2766 7.51632H14.2766C14.2766 10.1211 11.8188 12.5367 8.38829 12.5367V13.5367ZM1.5 7.51632C1.5 10.7817 4.52035 13.5367 8.38829 13.5367V12.5367C4.95774 12.5367 2.5 10.1211 2.5 7.51632H1.5ZM8.38829 1.49591C4.52035 1.49591 1.5 4.25097 1.5 7.51632H2.5C2.5 4.91154 4.95774 2.49591 8.38829 2.49591V1.49591ZM15.2766 7.51632C15.2766 4.25097 12.2562 1.49591 8.38829 1.49591V2.49591C11.8188 2.49591 14.2766 4.91154 14.2766 7.51632H15.2766ZM8.38829 14.5367C10.3441 14.5367 12.1406 13.903 13.5248 12.8457L12.9177 12.051C11.7108 12.9729 10.1284 13.5367 8.38829 13.5367V14.5367ZM0.5 7.51632C0.5 11.4505 4.09226 14.5367 8.38829 14.5367V13.5367C4.52345 13.5367 1.5 10.7844 1.5 7.51632H0.5ZM8.38829 0.495911C4.09226 0.495911 0.5 3.58217 0.5 7.51632H1.5C1.5 4.24822 4.52345 1.49591 8.38829 1.49591V0.495911ZM16.2766 7.51632C16.2766 3.58217 12.6843 0.495911 8.38829 0.495911V1.49591C12.2531 1.49591 15.2766 4.24822 15.2766 7.51632H16.2766ZM14.3339 12.1316C15.5372 10.9046 16.2766 9.29121 16.2766 7.51632H15.2766C15.2766 9.00305 14.6592 10.3717 13.6199 11.4314L14.3339 12.1316ZM13.646 12.1563L18.6184 16.5446L19.2801 15.7948L14.3077 11.4066L13.646 12.1563ZM18.5743 15.8388L17.9126 16.5886L18.6624 17.2503L19.3241 16.5005L18.5743 15.8388ZM18.6184 16.5446L13.5521 12.0734L12.8904 12.8232L17.9567 17.2944L18.6184 16.5446Z"
+                            fill="#333" />
+                    </svg> </button>
+            </form>
+            <div class="menu__item">
+                <img src="./asset/img/Group.svg" alt="">
+                <p>Categories</p>
+            </div>
+
+        </div>
+        <div class="header__list">
+            <ul class="list__ul">
+                <li class="active list__li"><a class="show" href="#index.html">Home</a></li>
+                <li class="list__li menu-con">
+                    <a href="#">Trang
+                        <svg class="rotate" width="15" height="10" viewBox="0 0 10 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.24928 1.35841L8.75072 1.35841L5 4.93335L1.24928 1.35841Z" fill="black"
+                                stroke="black" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <ul class="susb-menu">
+                        <li>
+                            <a href="">Trang 01</a>
+                        </li>
+                        <li>
+                            <a href="">Trang 02</a>
+                        </li>
+                        <li>
+                            <a href="">Trang 03</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__li"><a href="#"><svg width="15" height="11" viewBox="0 0 15 11" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.1875 10.7687H9.72656C9.5332 10.7687 9.375 10.6179 9.375 10.4336V9.31662C9.375 9.13233 9.5332 8.98154 9.72656 8.98154H12.1875C12.7061 8.98154 13.125 8.58223 13.125 8.08797V2.72659C13.125 2.23234 12.7061 1.83303 12.1875 1.83303H9.72656C9.5332 1.83303 9.375 1.68224 9.375 1.49794V0.380985C9.375 0.196687 9.5332 0.0458984 9.72656 0.0458984H12.1875C13.7402 0.0458984 15 1.24662 15 2.72659V8.08797C15 9.56794 13.7402 10.7687 12.1875 10.7687ZM10.8105 5.15597L5.88867 0.464756C5.44922 0.0458984 4.6875 0.339099 4.6875 0.939462V3.62015H0.703125C0.313477 3.62015 0 3.91894 0 4.29033V6.97102C0 7.34241 0.313477 7.64119 0.703125 7.64119H4.6875V10.3219C4.6875 10.9222 5.44922 11.2154 5.88867 10.7966L10.8105 6.10538C11.083 5.84289 11.083 5.41845 10.8105 5.15597Z"
+                                fill="black" />
+                        </svg> Sign Up</a></li>
+                <li class="list__li">
+                    <a href="#"><svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.80445 8.25256C9.78609 9.05555 8.53763 9.70375 6.99984 9.70375C5.46206 9.70375 4.2136 9.05555 4.19524 8.25256C1.84267 8.45776 0 10.3428 0 12.6379C0 15.0702 2.06853 15.0643 4.62052 15.0643H9.37948C11.9312 15.0643 14 15.0705 14 12.6379C13.9997 10.3428 12.1573 8.45776 9.80445 8.25256Z"
+                                fill="black" />
+                            <path
+                                d="M3.50473 4.27204C3.50722 4.30406 3.51033 4.3352 3.51313 4.36692C3.73619 6.77174 5.21207 8.62946 6.99999 8.62946C8.78759 8.62946 10.2638 6.77144 10.4868 4.36692C10.49 4.33549 10.4928 4.30406 10.4952 4.27204C10.5111 4.16766 10.5217 4.0621 10.5279 3.95505C10.5326 3.88181 10.5351 3.80857 10.5351 3.73384C10.5351 3.55059 10.5214 3.37119 10.4949 3.19565C10.2367 1.49182 8.77017 0.186523 6.99999 0.186523C5.2298 0.186523 3.76326 1.49182 3.50473 3.19565C3.47798 3.37119 3.4646 3.55089 3.4646 3.73384C3.4646 3.80827 3.46771 3.88181 3.47144 3.95505C3.4786 4.0621 3.48887 4.16796 3.50473 4.27204Z"
+                                fill="black" />
+                        </svg> Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="burger">
+            <div class="strip burger-strip-2">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+    </header>
+    <div class="faq-backgourd">
+        <h2>FAQ</h2>
+    </div>
+    <section class="section-faq">
+        <p>FREQUENTLY ASKED QUESTIONS</p>
+        <h3>These faqS were last modified on 15th january 2022</h3>
+        <div class="faq-tab">
+            <div class="tab-left">
+                <ul class="faq-list">
+                    <li class="list-item">
+                        <span class="what-prl" href="">What is PLR?
+                            <p class="prl-text">
+                                PLR (abbreviation for "Private Label Rights") is a product for which you pay a one-time
+                                fee for a
+                                license to use and make 100% profits from it.
+                                You can add your own name to the products (rebranding)
+                                and sell or give them away to your audience without
+                                needing the author's permission.
+                                <br><br>
+                                Some PLR licenses may differ, so it's always best to double-check the license terms for
+                                each product.
+                            </p>
+                        </span>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.09544L0.5 8.90458L5.00246 5.00001L0.5 1.09544Z" fill="#333333"
+                                stroke="#333333" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li class="list-item">
+
+                        <span class="what-prl" href="">While I could create the content myself, why would I use PLR
+                            content?
+                            <p class="prl-text">
+                                I believe you can, but the major point that I want to address here is its convenience.
+                                We'll save you plenty of time and money.
+                                <br><br>
+                                Indeed, PLR will save you significant amount of time. That’s why many people nowadays
+                                are eager to adopt to this option in order to save themselves plenty of time and focus
+                                on their company's expansion. For instance, when you need to write a plan or report
+                                urgently and need high expertise, it is not possible to compose every piece of material
+                                on your own, is it?
+                                <br><br>
+                                This is when PLR becomes so treasured. Now, you can use PLR products right away without
+                                spending too much time writing from scratch. Not being afraid of complicated copyright’s
+                                terms and conditions anymore, while the quality of the articles are improved
+                                tremendously. In that way, you can concentrate on expanding your business entirely.
+                                <br><br>
+                                You may, of course, alter the entire documents to make them your own as you wish, or
+                                change the format completely. You can customize the content in any way you want, which
+                                may contemplate more of your personalization.
+                            </p>
+                        </span>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.09544L0.5 8.90458L5.00246 5.00001L0.5 1.09544Z" fill="#333333"
+                                stroke="#333333" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <span class="what-prl" href="">What if I get found out?
+                            <p class="prl-text">
+                                If you’re like most people, you may now own hundreds of private label rights products in
+                                your own home that you don’t even notice about. Costco (Kirkland), Walmart (Great
+                                Value), Walgreens, and Target are just a few examples of those thousands of private
+                                label brands.
+                                <br> <br>
+                                Imagine if Walmart had to buy farms and factories to make products, such as toothpaste
+                                and coffee? It really couldn't be as developed as it is now.
+                                <br> <br>
+                                The beauty of private label products is that you can focus on creating your own products
+                                without having to start from scratch. Once you pay for the license, you have the legal
+                                right to brand the material, sell it, or give it away.
+                                <br> <br>
+                                Your customers crave for inspiration, personal attention, and useful information, and if
+                                you can offer them those things, you are moving one step forward towards success.
+                                <br> <br>
+                                You may inject anything to the content, including your personality, voice or your own
+                                story (without having to start from scratch).
+                                <br> <br>
+                                And when you continuously provide your clients new handouts, resources, and products,
+                                they will love you for it and stay loyalty to your brands. And Private Label Products
+                                will help you get there faster without doing everything yourself from scratch.
+                            </p>
+                        </span>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.09544L0.5 8.90458L5.00246 5.00001L0.5 1.09544Z" fill="#333333"
+                                stroke="#333333" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <span class="what-prl" href="">Is it necessary for me to rewrite the content?
+                            <p class="prl-text">
+                                You should, but it is not required. Most clients feel that they should implant their
+                                personalities and styles to the content in order to fit their brands. It is entirely up
+                                to you whether or not you want to re-create the content.
+                                <br><br>
+                                However, PLR will assist you a lot faster if you have blogs, websites, books, videos and
+                                so on in bringing superb quality to your customers, making your business grow faster.
+                            </p>
+                        </span>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.09544L0.5 8.90458L5.00246 5.00001L0.5 1.09544Z" fill="#333333"
+                                stroke="#333333" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <span class="what-prl" href="">What do I receive for being a PLR Bookstore membership?
+                            <p class="prl-text">
+                                By being a PLR Bookstore membership, users have unlimited access and downloads to every
+                                product available on PLR Bookstore as well as new products that will be released in the
+                                future. New products are released weekly. This way would allow our users to save
+                                significant amount of money instead of having to purchase them individually.
+                            </p>
+                        </span>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.09544L0.5 8.90458L5.00246 5.00001L0.5 1.09544Z" fill="#333333"
+                                stroke="#333333" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <span class="what-prl" href="">If I subscribe to PLR Bookstore, will I have access to all available
+                            products?
+                            <p class="prl-text">
+                                Certainly, as a member of PLR Bookstore, you have the right to access to all products
+                                currently listed on the PLR Bookstore as well as new products that will be released in
+                                the future, as long as your membership staying active!
+                            </p>
+                        </span>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.09544L0.5 8.90458L5.00246 5.00001L0.5 1.09544Z" fill="#333333"
+                                stroke="#333333" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <span class="what-prl" href="">Once registered, how can I download the product?
+                            <p class="prl-text">
+                                Once registered, how can I download the product?
+                                After registering to become a member with us, you will have the immediate access and the
+                                right to download all the products listed on the website by:
+                                <br><br>
+                                Step 1. Login to your account.
+                                <br><br>
+                                Step 2. Click on the product that you want to download. Detail page of the product will
+                                appear.
+                                <br><br>
+                                Step 3. In detail page, download link appears at the top, just click on it and the
+                                product will be downloaded.
+                                <br><br>
+                                If you sign up for a free membership plan, you may only be able to download 2,000 free
+                                products. But if you sign up for a paid membership plan, you will have the immediate
+                                access and be able to download all PLR products listed on PLRbookstore.net
+
+                            </p>
+                        </span>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.09544L0.5 8.90458L5.00246 5.00001L0.5 1.09544Z" fill="#333333"
+                                stroke="#333333" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-right">
+                <ul class="faq-list">
+                    <li class="list-item">
+                        <span class="what-prl" href="">Is there any per-product fees or hidden fees that haven't been
+                            mentioned?
+                            <p class="prl-text">
+                                When you sign up to become a member with PRL Bookstore, you will not be charged for any
+                                per-product cost or any other hidden fees.
+                            </p>
+                        </span>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.09544L0.5 8.90458L5.00246 5.00001L0.5 1.09544Z" fill="#333333"
+                                stroke="#333333" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <span class="what-prl" href="">What payments do we accept?
+                            <p class="prl-text">
+                                We accept PayPal payments, Credit Cards and Debit Cards from the vast majority of
+                                countries in the world.
+                            </p>
+                        </span>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.09544L0.5 8.90458L5.00246 5.00001L0.5 1.09544Z" fill="#333333"
+                                stroke="#333333" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <span class="what-prl" href="">Are there any restrictions I can and can't do with PLR products?
+                            <p class="prl-text">
+                                Each product has different licensing. The best way to find out about the product’s
+                                license is by looking at the product’s license descriptions outlined in the product’s
+                                detail page. The use of the product licenses can be found in the explanations given
+                                below:
+                                <br><br>
+                                1. What is Resale Rights (RR)?
+                                The resale license allows you to resell the product,
+                                but you cannot pass on this resell right to your
+                                customers. It's similar to having your own online store. 
+                                <br><br>
+                                2. What is Master Resell Rights (MRR)?
+                                This license allows you to resell the product to your customers but it doesn’t stop
+                                there, it also gives your customers the right to resell the product to their customers.
+                                <br><br>
+                                3. What is Private Label Rights (PLR)?
+                                Private Label Rights (PLR) provides you the authority to claim the ownership of the
+                                product and resell them to your customers. You have the complete freedom to do whatever
+                                you want with the product that you purchased. It's as if you simply declared yourself to
+                                be Facebook’s creator, and Meta wouldn't dare to argue with you. In other words, you've
+                                just made your own products without having to lift a finger.
+                                <br><br>
+                                4. What is Give Away Right?
+                                This license grants you the right to give away the items for free to the public. You can
+                                share, distribute across the internet, give away to your subscribers, completely for
+                                free as you wish.
+                            </p>
+                        </span>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.09544L0.5 8.90458L5.00246 5.00001L0.5 1.09544Z" fill="#333333"
+                                stroke="#333333" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <span class="what-prl" href="">Are there any refunds available with the Premium Plan?
+                            <p class="prl-text">
+                                We do offer a 7-day refund policy. However, we have measures in place to protect others
+                                of our premium members who do the right thing, and that is, premium members must not
+                                download more than 10 products before demanding for a refund.
+                                <br><br>
+                                If you are not satisfied with our products or services, please contact us immediately.
+                                Many members expect to download unlimited amount of products and then submit for a
+                                refund. This is prohibited and will not be abided.
+
+                            </p>
+                        </span>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.09544L0.5 8.90458L5.00246 5.00001L0.5 1.09544Z" fill="#333333"
+                                stroke="#333333" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <span class="what-prl" href="">Are there any ongoing fees?
+                            <p class="prl-text">
+                                The ongoing fees are only available with premium memberships of Monthly Plan, Quarterly
+                                Plan, and Annual Plan. Free Plan and Life Time Access Plan have no ongoing fees.
+                                <br><br>
+                                If that is a monthly plan, charge is $10/month, three-month plan – charge is $25/3
+                                months, and with an annual plan – charge is of $49/year.
+                            </p>
+                        </span>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.09544L0.5 8.90458L5.00246 5.00001L0.5 1.09544Z" fill="#333333"
+                                stroke="#333333" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <span class="what-prl" href="">Is it possible for me to cancel my paid plan whenever I want?
+                            <p class="prl-text">
+                                Yes, you may cancel your paid plan whenever you feel want to. Here is a guide: within
+                                your account, there is a button that allows you to cancel your PayPal or Credit Card
+                                subscriptions straightaway. All done with a button press!
+                                Simply sign in to your account and navigate to the following page:
+                                <span><u>https://www.PLRbookstore.net/account/cancel/</u></span>
+                                <br><br>
+                                You may also do this directly within your PayPal account.
+                                <br><br>
+                                Please note: if you cancel your PayPal or Credit Card subscriptions, you will still have
+                                the right to access your premium features on the webstore until your Premium Membership
+                                expires (unless that is Lifetime Access Premium Membership).
+                            </p>
+                        </span>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.09544L0.5 8.90458L5.00246 5.00001L0.5 1.09544Z" fill="#333333"
+                                stroke="#333333" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li class="list-item">
+                        <span class="what-prl" href="">How do I become an affiliate?
+                            <p class="prl-text">
+                                Simply sign up on our affiliates page. Please visit our affiliates program for more
+                                information on this.
+                                <br><br>
+                                * If you have any other questions that are not listed above, please feel free to contact
+                                us.
+                            </p>
+                        </span>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1.09544L0.5 8.90458L5.00246 5.00001L0.5 1.09544Z" fill="#333333"
+                                stroke="#333333" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__contener">
+            <div class="footer__thanhtoan">
+                <a href=""><img src="./asset/img/mastercard.png" alt=""></a>
+                <a href=""><img src="./asset/img/visa.png" alt=""></a>
+                <a href=""> <img src="./asset/img/paypal.png" alt=""></a>
+                <button type="submit">$ USD</button>
+            </div>
+
+
+            <div class="footer__left">
+                <a href=""><img src="./asset/img/logo-footer.png" alt=""></a>
+                <p>Done-For-You PLR Products</p>
+                <div class="footer__icon">
+                    <a href=""> <svg width="11" height="20" viewBox="0 0 11 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.63928 19.7013V10.7292H9.66609L10.116 7.21636H6.63928V4.97882C6.63928 3.96514 6.92171 3.27111 8.37655 3.27111H10.22V0.139211C9.32306 0.0430872 8.42148 -0.00332568 7.51941 0.000185184C4.84399 0.000185184 3.00711 1.63346 3.00711 4.63181V7.2098H0V10.7226H3.01367V19.7013H6.63928Z"
+                                fill="black" />
+                        </svg></a>
+                    <a href=""><svg width="18" height="15" viewBox="0 0 18 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.44 1.68302C16.7987 1.95968 16.1007 2.15879 15.3818 2.23634C16.1282 1.79292 16.6871 1.09239 16.9538 0.266188C16.2534 0.682831 15.4861 0.974988 14.686 1.1297C14.3516 0.772194 13.9471 0.487389 13.4978 0.293031C13.0485 0.0986734 12.564 -0.00107265 12.0745 8.69884e-06C10.0939 8.69884e-06 8.50098 1.60547 8.50098 3.57562C8.50098 3.85228 8.53451 4.12894 8.58901 4.39512C5.62331 4.24002 2.97828 2.82319 1.21982 0.65393C0.899405 1.2012 0.731498 1.82434 0.733566 2.4585C0.733566 3.69928 1.36443 4.79334 2.32645 5.43678C1.75952 5.41445 1.20586 5.25862 0.710511 4.98197V5.02598C0.710511 6.76348 1.93871 8.20337 3.57561 8.53452C3.26826 8.61436 2.95209 8.6552 2.63455 8.65608C2.4019 8.65608 2.18183 8.63303 1.95967 8.60159C2.41238 10.0184 3.73071 11.0475 5.30054 11.081C4.07234 12.0431 2.53395 12.609 0.863512 12.609C0.563798 12.609 0.287139 12.5985 0 12.5649C1.5845 13.5815 3.46453 14.1683 5.48917 14.1683C12.0619 14.1683 15.6585 8.72315 15.6585 3.99689C15.6585 3.8418 15.6585 3.6867 15.648 3.5316C16.3438 3.0223 16.9538 2.39143 17.44 1.68302Z"
+                                fill="black" />
+                        </svg></a>
+                    <a href=""><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.1828 5.4554C6.67986 5.4554 5.45336 6.68191 5.45336 8.18485C5.45336 9.68778 6.67986 10.9143 8.1828 10.9143C9.68573 10.9143 10.9122 9.68778 10.9122 8.18485C10.9122 6.68191 9.68573 5.4554 8.1828 5.4554ZM16.3691 8.18485C16.3691 7.05457 16.3793 5.93454 16.3158 4.80632C16.2524 3.49585 15.9534 2.33282 14.9952 1.37455C14.0348 0.414223 12.8738 0.117322 11.5634 0.0538465C10.4331 -0.00962896 9.31307 0.000609045 8.18485 0.000609045C7.05457 0.000609045 5.93454 -0.00962896 4.80632 0.0538465C3.49585 0.117322 2.33282 0.416271 1.37455 1.37455C0.414223 2.33487 0.117322 3.49585 0.0538465 4.80632C-0.00962896 5.93659 0.000609045 7.05662 0.000609045 8.18485C0.000609045 9.31307 -0.00962896 10.4352 0.0538465 11.5634C0.117322 12.8738 0.416271 14.0369 1.37455 14.9951C2.33487 15.9555 3.49585 16.2524 4.80632 16.3158C5.93659 16.3793 7.05662 16.3691 8.18485 16.3691C9.31512 16.3691 10.4352 16.3793 11.5634 16.3158C12.8738 16.2524 14.0369 15.9534 14.9952 14.9951C15.9555 14.0348 16.2524 12.8738 16.3158 11.5634C16.3814 10.4352 16.3691 9.31512 16.3691 8.18485ZM8.1828 12.3845C5.85878 12.3845 3.98318 10.5089 3.98318 8.18485C3.98318 5.86083 5.85878 3.98523 8.1828 3.98523C10.5068 3.98523 12.3824 5.86083 12.3824 8.18485C12.3824 10.5089 10.5068 12.3845 8.1828 12.3845ZM12.5544 4.79403C12.0118 4.79403 11.5736 4.35584 11.5736 3.81323C11.5736 3.27062 12.0118 2.83243 12.5544 2.83243C13.097 2.83243 13.5352 3.27062 13.5352 3.81323C13.5354 3.94208 13.5101 4.06969 13.4609 4.18876C13.4117 4.30783 13.3394 4.41601 13.2483 4.50712C13.1572 4.59823 13.049 4.67047 12.9299 4.7197C12.8109 4.76893 12.6833 4.79419 12.5544 4.79403Z"
+                                fill="black" />
+                        </svg></a>
+
+                </div>
+                <p>Subscribe for saving, news, and updates</p>
+                <form action="">
+                    <div class="footer__item">
+                        <input type="text" class="E-mail" placeholder="Enter Your E-mail">
+                        <button type="submit" class="button__right"><svg width="6" height="10" viewBox="0 0 9 14"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.666992 11.7619L5.4289 7.00004L0.666992 2.23814L1.61937 0.333374L8.28604 7.00004L1.61937 13.6667L0.666992 11.7619Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                    <button type="submit" class="footer__subscribe">SUBSCRIBE</button>
+                </form>
+            </div>
+            <div class="footer__support">
+                <h6>Support</h6>
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Advanced Search</a>
+                <a href="">Browse by Categories</a>
+                <a href="">PLR Training</a>
+                <a href="">Product Terms Explained</a>
+                <a href="">FAQs</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="footer__support">
+                <h6>Products</h6>
+                <a href="">Pricing</a>
+                <a href="">Sign Up - Register</a>
+                <a href="">Member's Login</a>
+                <a href="">New PLR Products</a>
+                <a href="">Distinctive PLR Products</a>
+                <a href="">Free PLR Products</a>
+                <a href="">Blog</a>
+                <a href="">Affiliate Program</a>
+            </div>
+            <div class="footer__support">
+                <h6>Legal</h6>
+                <a href="">Terms & Conditions</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Disclaimer</a>
+                <a href="">Copyright Notice</a>
+                <a href="">FTC Compliance</a>
+                <a href="">DMCA Compliance</a>
+                <a href="">Refund Policy</a>
+            </div>
+        </div>
+    </footer>
+    <div class="ther-end">
+        <span>
+            © 2021 PLR Bookstore. The Lagest Bookstore for PLR Enthusiasts
+            23 Milton Parade, Malvern VIC 3144, Australia
+        </span>
+    </div>
+    <script src="./asset/js/main.js"></script>
+</body>
+
+</html>

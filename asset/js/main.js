@@ -41,4 +41,6 @@ let susbMenu= document.querySelector('.susb-menu');
 
 		searchIcon.addEventListener('click', function(){
 			fromSearch.classList.toggle('left');
-		})
+		});
+
+	

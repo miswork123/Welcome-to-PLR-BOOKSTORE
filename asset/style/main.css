@@ -1590,6 +1590,24 @@ body {
     .footer__thanhtoan{
         padding: 5px;
     }
+
+    .section__brand{
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 50px;
+    }
+    .section__right{
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .section__left{
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 670px){
 
@@ -1755,6 +1773,24 @@ body {
     .img__bottom{
         right: 0;
         left: unset;
+    }
+    .list__bopular{
+        row-gap: 10px;
+    }
+    .list__item{
+        width: calc(100% / 2 - 10px);
+    }
+    .create a{
+        padding: 10px 20px;
+    }
+    .section__right{
+        margin-top: 20px;
+    }
+    .bookstore__text p{
+        font-size: 16px;
+    }
+    .bookstore__text h2{
+        font-size: 20px;
     }
 
 }
